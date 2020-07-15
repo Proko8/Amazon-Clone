@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <nav className="header">
-      {/* logo on the left -> img*/}
+      {/* logo on the left of -> img*/}
       <Link to="/">
         <img
           className="header__logo"
