@@ -33,7 +33,7 @@ function Home() {
         <Product
           id="12321341"
           title="ZOTAC Gaming GeForce RTX 2080 Ti AMP MAXX 11GB GDDR6 Graphics Card, ZT-T20810H-10P"
-          price={1,299.99}
+          price={1299.99}
           rating={5}
           image="https://images-na.ssl-images-amazon.com/images/I/71MU3OroNyL._AC_SL1500_.jpg"
         />
@@ -47,7 +47,7 @@ function Home() {
         <Product
           id="12321341"
           title="New Apple MacBook Pro (13-inch, 8GB RAM, 256GB SSD Storage, Magic Keyboard) - Space Gray"
-          price={1,249.99}
+          price={1249.99}
           rating={5}
           image="https://images-na.ssl-images-amazon.com/images/I/71HI3U9ZwZL._AC_SL1500_.jpg"
         />
