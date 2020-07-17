@@ -1,11 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, useHistory } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import Checkout from "./Checkout"
+import Login from "./Login"
+import { auth } from "./Firebase";
+import { useStateValue } from "./StateProvider";
+
 
 function App() {
+  const [{ user }, dispatch] = useStateValue();
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+      if(authUser){
+        dispatch({
+          type: "SET__USER",
+          user: authUser,
+        })
+      }else{
+        dispatch({
+          type: "SET__USER",
+          user: null,
+         })
+      }
+    })
+    return () => {
+      unsubscribe();
+    }
+  }, [])
+
+
   return (
     <Router>
       <div className="App">
@@ -16,7 +42,7 @@ function App() {
             <h1>Checkout Page</h1>
           </Route>
           <Route path="/login">
-            <h1>Login Page</h1>
+            <Login />
           </Route>
           <Route path="/">
             <Header />

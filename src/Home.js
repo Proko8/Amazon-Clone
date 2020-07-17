@@ -17,7 +17,7 @@ function Home() {
           id="12345"
           title='Acer Swift 3 Thin & Light Laptop, 14" Full HD IPS, AMD Ryzen 7 4700U Octa-Core Processor with Radeon Graphics, 8GB LPDDR4, 512GB NVMe SSD, WiFi 6, Backlit Keyboard, Fingerprint Reader, SF314-42-R9YN'
           price={679.99}
-          rating={5}
+          rating={4}
           image="https://images-na.ssl-images-amazon.com/images/I/71ZoLAhQrsL._AC_SL1500_.jpg"
         />
         <Product
@@ -48,7 +48,7 @@ function Home() {
           id="56789"
           title="New Apple MacBook Pro (13-inch, 8GB RAM, 256GB SSD Storage, Magic Keyboard) - Space Gray"
           price={1249.99}
-          rating={5}
+          rating={3}
           image="https://images-na.ssl-images-amazon.com/images/I/71HI3U9ZwZL._AC_SL1500_.jpg"
         />
       </div>
@@ -57,7 +57,7 @@ function Home() {
           id="678910"
           title="Sabrent 1TB Rocket NVMe 4.0 Gen4 PCIe M.2 Internal SSD Extreme Performance Solid State Drive (SB-ROCKET-NVMe4-1TB)"
           price={199.98}
-          rating={5}
+          rating={4}
           image="https://images-na.ssl-images-amazon.com/images/I/71yU3zvq5IL._AC_SL1500_.jpg"
         />
       </div>
