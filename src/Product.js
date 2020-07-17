@@ -5,9 +5,9 @@ import { useStateValue } from "./StateProvider"
 function Product({ id, title, image, price, rating }) {
     const [{ }, dispatch ] = useStateValue()
 
-    const addToBasket = () => {
+    const addToCart = () => {
         dispatch({
-          type: 'ADD_TO_BASKET',
+          type: 'ADD_TO_CART',
           item: {
             id: id,
             title: title,
@@ -17,7 +17,7 @@ function Product({ id, title, image, price, rating }) {
           }
         })
       }
-      
+
   return (
     <div className="product">
       <div className="product__info">
@@ -35,7 +35,7 @@ function Product({ id, title, image, price, rating }) {
         </div>
       </div>
       <img src={image} alt="" />
-      <button onClick={addToBasket}>Add to Basket</button>
+      <button onClick={addToCart}>Add to Cart</button>
     </div>
   );
 }

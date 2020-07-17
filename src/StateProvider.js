@@ -1,4 +1,4 @@
-//set up data layer to track the cart/basket
+//set up data layer to track the cart
 
 import React, { createContext, useContext, useReducer } from "react";
 

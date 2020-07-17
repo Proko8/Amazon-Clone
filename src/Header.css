@@ -14,11 +14,11 @@
   margin-top: 18px;
 }
 
-.header__optionBasket {
+.header__optionCart {
   display: flex;
   align-items: center;
 }
-.header__basketCount {
+.header__cartCount {
   margin-left: 10px;
   margin-right: 10px;
 }
