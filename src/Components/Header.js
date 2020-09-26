@@ -1,10 +1,10 @@
 import React from "react";
-import "./Header.css";
+import "../CSS/Header.css";
 import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import { useStateValue } from "./StateProvider"
-import { auth } from "./Firebase";
+import { useStateValue } from "../StateProvider"
+import { auth } from "../Firebase";
 
 function Header() {
   const [{ cart, user }, dispatch ] = useStateValue()
